@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="stylecf.css" />
+    <script src="contactForm.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="text-center">
+        <h1>Get In Touch!</h1>
+        <p>Contact us to join the team</p>
+      </div>
+      <div class="Contact">
+        <div class="Location">
+          <i class="fa-solid fa-location-pin"></i>
+          <p>JustIT 2nd Floor, London EC3N 1DD</p>
+        </div>
+
+        <div class="Phone">
+          <i class="fa-solid fa-phone"></i>
+          <p>020 7426 9835</p>
+        </div>
+        <div class="Email">
+          <i class="fa-solid fa-envelope"></i>
+          <p>JustIT@gmail.com</p>
+        </div>
+      </div>
+      <div class="contactForm">
+        <label class="form-label">Contact Form</label>
+
+        <div class="row">
+          <div class="col">
+            <div class="col pt-2">
+              <label for="formName" class="form-label">Your Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formName"
+                placeholder="Madina Ali"
+              />
+            </div>
+            <div class="col pt-4">
+              <label for="formEmail" class="form-label">Mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="formEmail"
+                placeholder="test@bootcamp.co.uk"
+              />
+            </div>
+            <div class="col pt-4">
+              <label for="formPhone" class="form-label">Phone</label>
+              <input
+                type="phone"
+                class="form-control"
+                id="formPhone"
+                placeholder="Your Phone"
+              />
+            </div>
+          </div>
+          <div class="col pt-2">
+            <label for="formMessage" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="formMessage"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+
+          <label class="form-label pt-5">Services</label>
+          <button type="button" class="col-sm-2 m-4 btn btn-sm serviceBtn">
+            Web Design
+          </button>
+          <button type="button" class="col-sm-2 m-4 btn btn-sm serviceBtn">
+            Web Development
+          </button>
+          <button type="button" class="col-sm-2 m-4 btn btn-sm serviceBtn">
+            Logo Design
+          </button>
+          <button type="button" class="col-sm-2 m-4 btn btn-sm serviceBtn">
+            Other
+          </button>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <button
+              class="btn btn-lg px-5 submitBtn"
+              type="submit"
+              onclick="onClickSubmit()"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

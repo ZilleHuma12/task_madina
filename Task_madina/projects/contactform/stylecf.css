@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin-top: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(85, 67, 204);
+   
+}
+.container{
+    width: 700px;
+    height: 400px;
+}
+.container .Contact{
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.contactForm{
+    background-color: aliceblue;
+    padding: 40px;
+    border-radius: 25px;
+}
+
+.Contact div:hover{
+    background-color: pink;
+    border-radius: 5px;
+}
+.Form{
+    height: 300px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:3px;
+}
+.form-label{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.serviceBtn{
+    background-color: #F9F9FB;
+    border: 2px solid lightgray;
+}
+.serviceBtn:hover{
+    background-color: pink;
+}
+.submitBtn{
+    background-color: pink;
+}
+.submitBtn:hover{
+    background-color: pink;
+}
+
+.Name{
+    grid-column:1/2;
+}
+.Form .Email{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.Form .Phone{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.Form .Message{
+
+    grid-column: 2/3;
+    grid-row: 1/4;
+}
+.Form .Services{
+    grid-column:1/3;
+}
+.Form .Submit{
+    grid-column:1/3;
+}
+i{
+    font-size: 20px;
+    color: aliceblue;
+}
+fieldset {
+    background-color:aliceblue;
+}

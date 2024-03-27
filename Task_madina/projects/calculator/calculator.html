@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Calculator</title>
+    <link rel="stylesheet" type="text/css" href="stylecalc.css" />
+    <script src="stylecalc.js"></script>
+  </head>
+  <body>
+    <div class="calculator-container">
+      <h2>Online Calculator</h2>
+      <form name="calculator">
+        <input type="text" name="display" id="display" disabled />
+        <br />
+        <input
+          type="button"
+          class="btn"
+          value="1"
+          onclick="addToDisplay('1')"
+        />
+        <input
+          type="button"
+          class="btn"
+          value="2"
+          onclick="addToDisplay('2')"
+        />
+        <input
+          type="button"
+          class="btn"
+          value="3"
+          onclick="addToDisplay('3')"
+        />
+        <input
+          type="button"
+          class="btn operator"
+          value="/"
+          onclick="addToDisplay('/')"
+        />
+        <br />
+        <input
+          type="button"
+          class="btn"
+          value="4"
+          onclick="addToDisplay('4')"
+        />
+        <input
+          type="button"
+          class="btn"
+          value="5"
+          onclick="addToDisplay('5')"
+        />
+        <input
+          type="button"
+          class="btn"
+          value="6"
+          onclick="addToDisplay('6')"
+        />
+        <input
+          type="button"
+          class="btn operator"
+          value="-"
+          onclick="addToDisplay('-')"
+        />
+        <br />
+        <input
+          type="button"
+          class="btn"
+          value="7"
+          onclick="addToDisplay('7')"
+        />
+        <input
+          type="button"
+          class="btn"
+          value="8"
+          onclick="addToDisplay('8')"
+        />
+        <input
+          type="button"
+          class="btn"
+          value="9"
+          onclick="addToDisplay('9')"
+        />
+        <input
+          type="button"
+          class="btn operator"
+          value="+"
+          onclick="addToDisplay('+')"
+        />
+        <br />
+        <input
+          type="button"
+          class="btn"
+          value="0"
+          onclick="addToDisplay('0')"
+        />
+        <input
+          type="button"
+          class="btn"
+          value="."
+          onclick="addToDisplay('.')"
+        />
+        <input
+          type="button"
+          class="btn equal"
+          value="="
+          onclick="calculate()"
+        />
+        <input
+          type="button"
+          class="btn clear"
+          value="C"
+          onclick="clearDisplay()"
+        />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
